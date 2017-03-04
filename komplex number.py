@@ -1,0 +1,49 @@
+i = -1
+while True:
+    operation = input("Введите название операции: ")
+    if operation == "конец":
+        break
+    if operation == "сложение":
+        x1 = int(input())
+        y1= int(input())
+        z1 = x1+y1*i
+        print(z1)
+        x2 = int(input())
+        y2= int(input())
+        z2 = x2+y2*i
+        print(z2)
+        z3 = (x1+x2)+i*(y1+y2)
+        print("z1+z2 = ", z3)
+    if operation == "вычитание":
+        x1 = int(input())
+        y1= int(input())
+        z1 = x1+y1*i
+        print(z1)
+        x2 = int(input())
+        y2= int(input())
+        z2 = x2+y2*i
+        print(z2)
+        z3 = (x1-x2)+i*(y1-y2)
+        print("z1-z2 = ", z3)
+    if operation == "умножение":
+        x1 = int(input())
+        y1= int(input())
+        z1 = x1+y1*i
+        print(z1)
+        x2 = int(input())
+        y2= int(input())
+        z2 = x2+y2*i
+        print(z2)
+        z3 = (x1*x2-y1*y2)+(x1*y2+x2*y1)
+        print("z1*z2 = ", z3)
+    if operation == "деление":
+        x1 = int(input())
+        y1= int(input())
+        z1 = x1+y1*i
+        print(z1)
+        x2 = int(input())
+        y2= int(input())
+        z2 = x2+y2*i
+        print(z2)
+        z3 = ((x1*x2+y1*y2)/(x2**2+y2**2))+i*((x2*y1-x1*y2)/(x2**2+y2**2))
+        print("z1/z2 = ", z3)
